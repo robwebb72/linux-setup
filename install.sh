@@ -127,6 +127,6 @@ flatpak install flathub com.dropbox.Client -y
 echo ">>>>> Installing NordVPN"
 wget https://downloads.nordcdn.com/apps/linux/install.sh -O nord-install.sh
 sudo sh nord-install.sh
-sudo apt install nordvpn=3.17.4 -y # issue with whitelisting with newer versions at present
-nordvpn whitelist add subnet 192.168.1.254/24
+sudo usermod -aG nordvpn $USER
+sudo apt install nordvpn=3.17.4 -y --allow-downgrades # issue with whitelisting with newer versions at present
 rm nord-install.sh
