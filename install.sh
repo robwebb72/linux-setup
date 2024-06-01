@@ -18,7 +18,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vivaldi.gpg] https://repo.viv
 sudo apt update -y && sudo apt install vivaldi-stable -y
 
 echo ">>>>> Installing Obsidian"
-flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub md.obsidian.Obsidian -y
 
 echo ">>>>> Installing GitKraken"
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
