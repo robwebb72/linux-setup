@@ -1,7 +1,7 @@
 
  install JetBrainsMono
 echo ">>>>> Installing JetBrainsMono Font"
-sudo cp files/fonts/jetbrains-mono-2.304/fonts/*.ttf /usr/share/fonts/
+sudo cp files/fonts/jetbrains-mono-2.304/*.ttf /usr/share/fonts/
 fc-cache -f -v
 
  install Microsoft Edge
