@@ -1,10 +1,10 @@
 
- install JetBrainsMono
+sudo apt install flatpak -y
+
 echo ">>>>> Installing JetBrainsMono Font"
 sudo cp files/fonts/jetbrains-mono-2.304/*.ttf /usr/share/fonts/
 fc-cache -f -v
 
- install Microsoft Edge
 echo ">>>>> Installing Microsoft Edge"
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
