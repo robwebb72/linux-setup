@@ -127,9 +127,14 @@ flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 echo ">>>>> Installing DropBox"
 flatpak install flathub com.dropbox.Client -y
 
-echo ">>>>> Installing NordVPN"
-wget https://downloads.nordcdn.com/apps/linux/install.sh -O nord-install.sh
-sudo sh nord-install.sh
-sudo usermod -aG nordvpn $USER
-sudo apt install nordvpn=3.17.4 -y --allow-downgrades # issue with whitelisting with newer versions at present
-rm nord-install.sh
+echo ">>>>> Installing Stacer"
+sudo add-apt-repository ppa:oguzhaninan/stacer
+sudo apt-get update
+sudo apt-get install stacer -y
+
+#echo ">>>>> Installing NordVPN"
+#wget https://downloads.nordcdn.com/apps/linux/install.sh -O nord-install.sh
+#sudo sh nord-install.sh
+#sudo usermod -aG nordvpn $USER
+#sudo apt install nordvpn=3.17.4 -y --allow-downgrades # issue with whitelisting with newer versions at present
+#rm nord-install.sh
