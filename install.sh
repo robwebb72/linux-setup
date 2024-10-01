@@ -87,7 +87,7 @@ echo ">>>>> Installing Caffeine"
 sudo apt install caffeine -y
 
 echo ">>>>> Installing qBitTorrent"
-sudo apt install dirmngr ca-certificates software-properties-common apt-transport-https
+sudo apt install dirmngr ca-certificates software-properties-common apt-transport-https -y
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
 sudo apt update
 sudo apt install qbittorrent -y
