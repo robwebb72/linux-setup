@@ -8,12 +8,12 @@ echo ">>>>> Installing JetBrainsMono Font"
 sudo cp files/fonts/jetbrains-mono-2.304/*.ttf /usr/share/fonts/
 fc-cache -f -v
 
-echo ">>>>> Installing Microsoft Edge"
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
-sudo rm microsoft.gpg
-sudo apt update -y && sudo apt install microsoft-edge-stable -y
+#echo ">>>>> Installing Microsoft Edge"
+#curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+#sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+#sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+#sudo rm microsoft.gpg
+#sudo apt update -y && sudo apt install microsoft-edge-stable -y
 
 echo ">>>>> Installing Vivaldi"
 curl -fSsL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vivaldi.gpg > /dev/null
@@ -86,6 +86,8 @@ sudo apt install veracrypt -y
 echo ">>>>> Installing Caffeine"
 sudo apt install caffeine -y
 
+echo ">>>>> Installing Audacious (music-player)"
+sudo apt-get install audacious
 echo ">>>>> Installing qBitTorrent"
 sudo apt install dirmngr ca-certificates software-properties-common apt-transport-https -y
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
