@@ -87,7 +87,8 @@ echo ">>>>> Installing Caffeine"
 sudo apt install caffeine -y
 
 echo ">>>>> Installing Audacious (music-player)"
-sudo apt-get install audacious
+sudo apt-get install audacious -y
+
 echo ">>>>> Installing qBitTorrent"
 sudo apt install dirmngr ca-certificates software-properties-common apt-transport-https -y
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
@@ -126,6 +127,8 @@ flatpak install flathub com.todoist.Todoist -y
 echo ">>>>> Installing WhatsApp for Linux"
 flatpak install flathub com.github.eneshecan.WhatsAppForLinux -y
 
+echo ">>>>> Installing WhatSie (WhatsApp client)"
+flatpak install flathub com.ktechpit.whatsie -y
 echo ">>>>> Installing DropBox"
 flatpak install flathub com.dropbox.Client -y
 
