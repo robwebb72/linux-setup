@@ -140,6 +140,9 @@ sudo add-apt-repository ppa:oguzhaninan/stacer
 sudo apt-get update
 sudo apt-get install stacer -y
 
+echo ">>>>> Installing PowerTop"
+sudo apt-get install powertop -y
+
 #echo ">>>>> Installing NordVPN"
 #wget https://downloads.nordcdn.com/apps/linux/install.sh -O nord-install.sh
 #sudo sh nord-install.sh
