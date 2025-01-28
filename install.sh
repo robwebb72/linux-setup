@@ -4,6 +4,12 @@ sudo apt install flatpak -y
 sudo apt install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+sudo apt install git -y
+
+# installing zsh
+sudo apt install zsh -y
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
 echo ">>>>> Installing JetBrainsMono Font"
 sudo cp files/fonts/jetbrains-mono-2.304/*.ttf /usr/share/fonts/
 fc-cache -f -v
