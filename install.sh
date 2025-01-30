@@ -22,7 +22,7 @@ fc-cache -f -v
 #sudo apt update -y && sudo apt install microsoft-edge-stable -y
 
 echo ">>>>> Installing Waterfox"
-flatpak install flathub net.waterfox.waterfox
+flatpak install flathub net.waterfox.waterfox -y
 
 echo ">>>>> Installing Vivaldi"
 curl -fSsL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vivaldi.gpg > /dev/null
