@@ -24,6 +24,9 @@ fc-cache -f -v
 echo ">>>>> Installing Waterfox"
 flatpak install flathub net.waterfox.waterfox -y
 
+echo ">>>>> Installing nomacs"
+flatpak install flathub org.nomacs.ImageLounge -y
+
 echo ">>>>> Installing Vivaldi"
 curl -fSsL https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vivaldi.gpg > /dev/null
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vivaldi.gpg] https://repo.vivaldi.com/archive/deb/ stable main | sudo tee /etc/apt/sources.list.d/vivaldi.list
