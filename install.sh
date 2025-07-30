@@ -10,6 +10,9 @@ sudo apt install git -y
 sudo apt install zsh -y
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
+# install synapse
+sudo apt install synapse -y
+
 echo ">>>>> Installing JetBrainsMono Font"
 sudo cp files/fonts/jetbrains-mono-2.304/*.ttf /usr/share/fonts/
 fc-cache -f -v
