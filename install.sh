@@ -17,13 +17,6 @@ echo ">>>>> Installing JetBrainsMono Font"
 sudo cp files/fonts/jetbrains-mono-2.304/*.ttf /usr/share/fonts/
 fc-cache -f -v
 
-#echo ">>>>> Installing Microsoft Edge"
-#curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-#sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
-#sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
-#sudo rm microsoft.gpg
-#sudo apt update -y && sudo apt install microsoft-edge-stable -y
-
 echo ">>>>> Installing Waterfox"
 flatpak install flathub net.waterfox.waterfox -y
 
@@ -157,10 +150,3 @@ sudo apt-get install stacer -y
 
 echo ">>>>> Installing PowerTop"
 sudo apt-get install powertop -y
-
-#echo ">>>>> Installing NordVPN"
-#wget https://downloads.nordcdn.com/apps/linux/install.sh -O nord-install.sh
-#sudo sh nord-install.sh
-#sudo usermod -aG nordvpn $USER
-#sudo apt install nordvpn=3.17.4 -y --allow-downgrades # issue with whitelisting with newer versions at present
-#rm nord-install.sh
