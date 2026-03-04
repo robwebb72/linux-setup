@@ -20,6 +20,10 @@ fc-cache -f -v
 echo ">>>>> Installing Waterfox"
 flatpak install flathub net.waterfox.waterfox -y
 
+echo ">>>>> Installing Fastfetch"
+wget https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.deb
+sudo dpkg -i fastfetch-linux-amd64.deb
+
 echo ">>>>> Installing nomacs"
 flatpak install flathub org.nomacs.ImageLounge -y
 
