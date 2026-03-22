@@ -1,0 +1,36 @@
+This script installs the following
+
+- [ ] JetBrainsMono Font
+- [ ] Waterfox
+- [ ] Fastfetch
+- [ ] nomacs
+- [ ] Vivaldi
+- [ ] Obsidian
+- [ ] GitKraken
+- [ ] Neovim
+- [ ] Mono
+- [ ] Wine
+- [ ] VS Code
+- [ ] Steam
+- [ ] Spotify
+- [ ] GIMP
+- [ ] Sublime Text
+- [ ] Calibre
+- [ ] VeraCrypt
+- [ ] Caffeine
+- [ ] Audacious (music-player)
+- [ ] qBitTorrent
+- [ ] Fuse Spectrum Emulator
+- [ ] draw.io
+- [ ] fs-uae
+- [ ] Anki
+- [ ] Clementine
+- [ ] Tiled
+- [ ] Bitwarden
+- [ ] Todoist
+- [ ] WhatsApp for Linux
+- [ ] WhatSie (WhatsApp client)
+- [ ] DropBox
+- [ ] Amiberry
+- [ ] Stacer
+- [ ] PowerTop
